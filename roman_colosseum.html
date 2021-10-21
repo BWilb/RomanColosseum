@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Roman Colloseum</title>
+</head>
+<body style="margin:0px">
+
+<!--This HTML file covers an SVG drawing of the Roman Colosseum-->
+
+	<svg width="1500" height="800">
+
+		<rect x="0" y="0" width="1500" height="400" style="fill:#3366ff" />
+
+		<rect x="0" y="400" width="1500" height="600" style="fill:#a3a3c2" />
+
+		<rect x="200" y="200" width="1000" height="300" rx="10" ry="10" stroke="orange"
+		stroke-width="3" fill="#e6ac00" />
+
+		<!--These three rectangles draw the sky, ground, and colloseum-->
+
+		<circle cx="60" cy="60" r="50" fill="yellow"></circle>
+		<!--this is the sun-->
+
+		<defs>
+			<linearGradient id="grad1" x1="0%" y1="50%" x2="0%" y2="100%">
+				<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+				<stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:0.5" />
+			</linearGradient>
+		</defs>
+		<rect x="300" y="350" width="100" height="150" ry="5"
+		fill="url(#grad1)">
+	</rect>
+
+	<defs>
+		<linearGradient id="grad1" x1="0%" y1="50%" x2="0%" y2="100%">
+			<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:0.5" />
+		</linearGradient>
+	</defs>
+	<rect x="600" y="350" width="100" height="150" ry="5"
+	fill="url(#grad1)">
+</rect>
+
+<defs>
+	<linearGradient id="grad1" x1="0%" y1="50%" x2="0%" y2="100%">
+		<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+		<stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:0.5" />
+	</linearGradient>
+</defs>
+<rect x="900" y="350" width="100" height="150" ry="5"
+fill="url(#grad1)" >
+</rect>
+
+<!-- These three rectangles draw the entrances to the colosseum-->
+
+<polygon points="1200,200 1350,150 1350,400 1200,500" 
+style="fill:#e6ac00; stroke:orange; stroke-width:3;">
+</polygon>
+
+<polygon points="300,150 1350,150 1200,200 200,200" 
+style="fill:#e6ac00; stroke:orange; stroke-width:3;">
+</polygon>
+<!--These two polygosns draw the top and sides of the colosseum-->
+
+<ellipse cx="750" cy="175" rx="450" ry="12.5" 
+style="fill:black;">
+</ellipse>
+<!--drawing of carved out ceiling-->
+
+<ellipse cx="1387.5" cy="162.5" rx="75" ry="10" 
+stroke="white" stroke-width="3" fill="white">
+
+</ellipse>
+
+<defs>
+	<filter id="f3" x="0" y="0" width="200%" height="300%">
+		<feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+	</filter>
+</defs>
+<ellipse cx="1390" cy="412.5" rx="70" ry="10"
+stroke="white" stroke-width="3" fill="white" filter="url(#f3)">
+</ellipse>
+
+<rect x="1350" y="162.5" height="250" width="75"
+style="fill:white">
+</rect>
+
+
+<defs>
+	<filter id="f3" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+	</filter>
+</defs>
+<ellipse cx="1225" cy="500" rx="70" ry="10" 
+stroke="white" stroke-width="3" fill="white" filter="url(#f3)">
+</ellipse>
+
+<ellipse cx="1225" cy="200" rx="70" ry="10"
+stroke="white" stroke-width="3" fill="white">
+</ellipse>
+
+<rect x="1177.5" y="200" height="300" width="87.5"
+style="fill:white"></rect>
+<!--these sets of rectangles and ellipses draw the pillars-->
+
+<polygon points="1120,200 1340,150 1460,150 1350,200"
+stroke="#e6ac00" stroke-width="3" fill="#e6ac00">
+<!--this draws a cover for the pillars-->
+
+</polygon>
+
+<polygon points="0,800 300,500 400,500 200,800"
+stroke="#666699" stroke-width="3" fill="#8585ad">
+</polygon>
+
+<polygon points="550,800 600,500 700,500 750,800" 
+stroke="#666699" stroke-width="3" fill="#8585ad">
+</polygon>
+
+<polygon points="1000,500 1200,800 1025,800 900,500"
+stroke="#666699" stroke-width="3" fill="#8585ad">
+</polygon>
+<!--these three polygons draw the roads to the colosseum-->
+
+</svg>
+</body>
+</html>
